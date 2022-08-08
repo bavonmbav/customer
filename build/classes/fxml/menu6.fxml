@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="barmenu" prefHeight="509.0" prefWidth="314.0" style="-fx-background-color: #024d3f;" styleClass="pane" stylesheets="@design.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.Menu6Controller">
+   <children>
+      <TextField fx:id="nom1" layoutX="78.0" layoutY="189.0" opacity="0.85" promptText="Nom" />
+      <ImageView fx:id="view" fitHeight="150.0" fitWidth="200.0" layoutX="76.0" layoutY="16.0" onMouseClicked="#shoix" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/searchx.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="93.0" layoutY="166.0" text="Choiser une images" textFill="#49bca1" />
+      <TextField fx:id="postnom" layoutX="79.0" layoutY="232.0" opacity="0.85" prefWidth="149.0" promptText="post-nom" />
+      <TextField fx:id="adrress" layoutX="79.0" layoutY="328.0" opacity="0.85" promptText="adresse" />
+      <TextField fx:id="prenom" layoutX="78.0" layoutY="278.0" opacity="0.85" promptText="prenom" />
+      <Label layoutX="32.0" layoutY="189.0" prefHeight="25.0" prefWidth="39.0" text="Nom:" textFill="WHITE" />
+      <Label layoutX="14.0" layoutY="231.0" prefHeight="25.0" prefWidth="60.0" text="Post-Nom:" textFill="WHITE" />
+      <Label layoutX="21.0" layoutY="278.0" prefHeight="25.0" prefWidth="60.0" text="Prenom:" textFill="WHITE" />
+      <Label layoutX="27.0" layoutY="328.0" prefHeight="25.0" prefWidth="48.0" text="Adresse:" textFill="WHITE" />
+      <TextField fx:id="telephone" layoutX="78.0" layoutY="369.0" opacity="0.85" promptText="telephone" />
+      <Label layoutX="32.0" layoutY="369.0" prefHeight="25.0" prefWidth="39.0" text="Tele:" textFill="WHITE" />
+      <Label layoutX="44.0" layoutY="415.0" prefHeight="25.0" prefWidth="39.0" text="Sexe:" textFill="WHITE" />
+      <Button layoutX="81.0" layoutY="453.0" mnemonicParsing="false" onAction="#ajouter" styleClass="pane" text="Ajouter" textFill="WHITE" />
+      <TextField fx:id="sexe" layoutX="77.0" layoutY="415.0" prefHeight="25.0" prefWidth="32.0" />
+      <Label fx:id="imalabe" layoutX="140.0" layoutY="419.0" />
+   </children>
+</AnchorPane>

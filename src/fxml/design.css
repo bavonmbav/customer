@@ -1,0 +1,13 @@
+.image{
+    -fx-cursor: hand;
+}
+.pane{
+    -fx-background-color: #0e2a40;
+
+}
+.il:hover{
+    -fx-background-color:black;
+}
+.bac{
+    -fx-background-color:#032d54;
+}

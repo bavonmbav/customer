@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="322.0" prefWidth="521.0" stylesheets="@design.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifierController">
+   <children>
+      <Pane layoutX="93.0" layoutY="48.0" prefHeight="344.0" prefWidth="521.0" styleClass="pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="noms" layoutX="115.0" layoutY="37.0" />
+            <TextField fx:id="prenoms" layoutX="113.0" layoutY="130.0" />
+            <TextField fx:id="postnoms" layoutX="112.0" layoutY="85.0" />
+            <TextField fx:id="genres" layoutX="111.0" layoutY="175.0" />
+            <TextField fx:id="adressss" layoutX="112.0" layoutY="221.0" />
+            <Label layoutX="47.0" layoutY="40.0" text="Nom :" textFill="WHITE" />
+            <Label layoutX="48.0" layoutY="83.0" text="Postnom :" textFill="WHITE" />
+            <Label layoutX="47.0" layoutY="132.0" text="Prenom :" textFill="WHITE" />
+            <Label layoutX="46.0" layoutY="182.0" text="Genre :" textFill="WHITE" />
+            <Label layoutX="47.0" layoutY="220.0" text="Adresse :" textFill="WHITE" />
+            <TextField fx:id="telephoness" layoutX="110.0" layoutY="263.0" />
+            <Label layoutX="45.0" layoutY="262.0" text="Tele :" textFill="WHITE" />
+            <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" layoutX="287.0" layoutY="57.0" onMouseClicked="#setImga" pickOnBounds="true" preserveRatio="true" />
+            <Button layoutX="310.0" layoutY="245.0" mnemonicParsing="false" onAction="#setmodie" style="-fx-background-color: #2cc0c3;" text="Modifier" textFill="WHITE" />
+            <Label fx:id="imalabe" layoutX="408.0" layoutY="254.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

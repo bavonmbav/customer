@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -9,31 +12,36 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="parent" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #52759a;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+<AnchorPane id="AnchorPane" fx:id="parent" onMouseDragged="#dragged" onMousePressed="#presse" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #52759a;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
    <children>
-      <ImageView fitHeight="421.0" fitWidth="600.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../images/pexels-pixabay-35888.jpg" />
-         </image>
-      </ImageView>
-      <Pane layoutX="282.0" layoutY="33.0" opacity="0.81" prefHeight="330.0" prefWidth="283.0" style="-fx-background-color: #c5c7c9; -fx-background-radius: 20;">
+      <Pane layoutX="282.0" layoutY="33.0" opacity="0.85" prefHeight="330.0" prefWidth="283.0" style="-fx-background-color: #c5c7c9; -fx-background-radius: 20;">
          <children>
             <ImageView fitHeight="90.0" fitWidth="91.0" layoutX="97.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../images/keys.png" />
+                  <Image url="@../images/contacts_500px.png" />
                </image>
             </ImageView>
-            <TextField fx:id="name" layoutX="22.0" layoutY="98.0" prefHeight="35.0" prefWidth="239.0" promptText="UserName" style="-fx-background-radius: 200;">
+            <TextField fx:id="name" alignment="CENTER" layoutX="22.0" layoutY="98.0" prefHeight="35.0" prefWidth="239.0" promptText="UserName" style="-fx-background-radius: 200;">
                <font>
                   <Font name="Arial Bold" size="16.0" />
                </font>
             </TextField>
-            <TextField fx:id="passe" layoutX="22.0" layoutY="157.0" prefHeight="24.0" prefWidth="239.0" promptText="Password" style="-fx-background-radius: 200;">
+            <Button layoutX="89.0" layoutY="235.0" mnemonicParsing="false" onAction="#connecte" prefHeight="34.0" prefWidth="106.0" style="-fx-background-color: black; -fx-border-radius: 300; -fx-background-radius: 200;" text="Se connecter" textFill="#096eeb">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Label fx:id="labelaf" layoutX="106.0" layoutY="288.0" text="Afficher le mot de passe" textFill="#00b2ff" />
+            <CheckBox fx:id="select" layoutX="80.0" layoutY="288.0" mnemonicParsing="false" onAction="#selection" prefHeight="17.0" prefWidth="19.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></CheckBox>
+            <PasswordField fx:id="passes" alignment="CENTER" layoutX="24.0" layoutY="149.0" prefHeight="35.0" prefWidth="233.0" promptText="PassWord" style="-fx-background-radius: 200;" />
+            <TextField fx:id="passewtxt" alignment="CENTER" layoutX="24.0" layoutY="148.0" prefHeight="35.0" prefWidth="233.0" promptText="PassWord" style="-fx-background-radius: 200;" visible="false" />
+            <Label fx:id="MessageError" layoutX="106.0" layoutY="192.0" textFill="RED">
                <font>
-                  <Font size="16.0" />
+                  <Font size="13.0" />
                </font>
-            </TextField>
-            <Button layoutX="89.0" layoutY="235.0" mnemonicParsing="false" onAction="#connecte" prefHeight="34.0" prefWidth="106.0" style="-fx-background-color: black; -fx-border-radius: 300; -fx-background-radius: 200;" text="Se connecter" textFill="#096eeb" />
+            </Label>
          </children>
       </Pane>
       <Pane layoutX="254.0" layoutY="48.0" prefHeight="301.0" prefWidth="2.0" style="-fx-background-color: #fff;" />
@@ -53,5 +61,13 @@
             <Image url="@../images/mySpace.png" />
          </image>
       </ImageView>
+      <Label alignment="CENTER" layoutX="97.0" layoutY="332.0" onMouseClicked="#clase" opacity="0.91" text="quitter" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
    </children>
+   <cursor>
+      <Cursor fx:constant="MOVE" />
+   </cursor>
 </AnchorPane>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pare" prefHeight="496.0" prefWidth="855.0" stylesheets="@design.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tableClasse.Table5Controller">
+   <children>
+ <Pane layoutX="83.0" layoutY="47.0" onMouseDragged="#dragged" onMousePressed="#presse" prefHeight="200.0" prefWidth="820.0" styleClass="pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">         <children>
+            <Button layoutX="349.0" layoutY="430.0" mnemonicParsing="false" onAction="#getinscription" prefHeight="44.0" prefWidth="130.0" styleClass="pane" text="ajoute" textFill="#ccffe6">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/add_user_group_man_man_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <TextField fx:id="noms" layoutX="686.0" layoutY="66.0" prefHeight="24.0" prefWidth="147.0" visible="false" />
+            <Button layoutX="83.0" layoutY="432.0" mnemonicParsing="false" onAction="#getmodifier" prefHeight="47.0" prefWidth="142.0" styleClass="pane" text="Update" textFill="#ccffe6">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/refresh_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button layoutX="229.0" layoutY="431.0" mnemonicParsing="false" onAction="#getdeletes" prefHeight="44.0" prefWidth="130.0" styleClass="pane" text="clear" textFill="#ccffe6">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/delete_bin_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <TableView fx:id="tableaux" layoutX="17.0" layoutY="53.0" prefHeight="362.0" prefWidth="666.0" styleClass="pane">
+              <columns>
+                <TableColumn fx:id="nom" prefWidth="75.0" text="Nom" />
+                <TableColumn fx:id="postnom" prefWidth="75.0" text="Post-nom" />
+                  <TableColumn fx:id="prenom" prefWidth="75.0" text="Prenom" />
+                  <TableColumn fx:id="Genre" prefWidth="75.0" text="Genre" />
+                  <TableColumn fx:id="Adresse" prefWidth="75.0" text="Adresse" />
+                  <TableColumn fx:id="tellephone" prefWidth="75.0" text="telephone" />
+                  <TableColumn fx:id="Date" prefWidth="141.66668701171875" text="Date" />
+                  <TableColumn fx:id="affiche1" prefWidth="72.0" text="Affiche" />
+              </columns>
+            </TableView>
+            <TextField fx:id="filter" layoutX="300.0" layoutY="17.0" prefHeight="25.0" prefWidth="258.0" />
+            <Label layoutX="241.0" layoutY="21.0" text="Recherche" textFill="WHITE" />
+            <ImageView fitHeight="32.0" fitWidth="41.0" layoutX="578.0" layoutY="13.0" onMouseClicked="#actualiser" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/restart.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="telephoness" layoutX="689.0" layoutY="312.0" prefHeight="24.0" prefWidth="147.0" visible="false" />
+            <TextField fx:id="adressss" layoutX="688.0" layoutY="274.0" prefHeight="24.0" prefWidth="147.0" visible="false" />
+            <TextField fx:id="genres" layoutX="688.0" layoutY="235.0" prefHeight="24.0" prefWidth="147.0" visible="false" />
+            <TextField layoutX="686.0" layoutY="196.0" prefHeight="24.0" prefWidth="147.0" visible="false" />
+            <TextField fx:id="prenoms" layoutX="686.0" layoutY="153.0" prefHeight="24.0" prefWidth="147.0" visible="false" />
+            <TextField fx:id="postnoms" layoutX="687.0" layoutY="113.0" prefHeight="24.0" prefWidth="147.0" visible="false" />
+            <ImageView fitHeight="38.0" fitWidth="52.0" layoutX="691.0" layoutY="446.0" onMouseClicked="#afficherInfo" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/pdf_96px.png" />
+               </image>
+            </ImageView>
+            <Circle layoutX="739.0" layoutY="48.0" radius="18.0" stroke="#f86363" strokeType="INSIDE" strokeWidth="3.0" />
+            <Circle layoutX="531.0" layoutY="464.0" radius="19.0" stroke="#fffdfd" strokeMiterLimit="12.0" strokeType="INSIDE" strokeWidth="3.0" />
+            <Circle layoutX="623.0" layoutY="463.0" radius="19.0" stroke="#fffb81" strokeType="INSIDE" strokeWidth="3.0" />
+            <Label layoutX="723.0" layoutY="456.0" text="PDF" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="nombre" layoutX="733.0" layoutY="31.0" text="0" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="698.0" text="Nombre d'eleves" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="garcon" layoutX="527.0" layoutY="455.0" text="0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="609.0" layoutY="423.0" text="Filles" textFill="WHITE" />
+            <Label layoutX="512.0" layoutY="421.0" text="Garcons" textFill="WHITE" />
+            <Label fx:id="file" layoutX="620.0" layoutY="453.0" text="0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="753.0" layoutY="446.0" mnemonicParsing="false" onAction="#exporter" prefHeight="38.0" prefWidth="86.0" styleClass="pane" text="Export" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/microsoft_excel_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+             <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="19.0" layoutY="5.0" onMouseClicked="#retour" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/left.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
+
