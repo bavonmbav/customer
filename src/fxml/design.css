@@ -11,3 +11,19 @@
 .bac{
     -fx-background-color:#032d54;
 }
+.table{
+    -fx-background-color: transparent;
+}
+.color:hover{
+    -fx-background-color:  #3498db;
+}
+.titlepane{
+    -fx-background-color: #0077ff;
+}
+.colorText{
+    -fx-background-color: #fff;
+}
+.colorBox
+{
+    -fx-background-color: #35ff63;
+}

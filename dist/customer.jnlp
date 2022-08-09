@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="customer.jar" size="317295" download="eager" />
+    <jar href="customer.jar" size="374279" download="eager" />
     <jar href="lib\SparseBitSet-1.2.jar" size="24510" download="eager" />
     <jar href="lib\commons-codec-1.15.jar" size="353793" download="eager" />
     <jar href="lib\commons-collections4-4.4.jar" size="751914" download="eager" />

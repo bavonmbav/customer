@@ -49,7 +49,7 @@
                      </image>
                   </ImageView>
                </graphic></Button>
-            <TableView fx:id="tableaux" layoutX="17.0" layoutY="53.0" prefHeight="362.0" prefWidth="666.0" styleClass="pane">
+            <TableView fx:id="tableaux" layoutX="17.0" layoutY="53.0" prefHeight="362.0" prefWidth="666.0" styleClass="table">
               <columns>
                 <TableColumn fx:id="nom" prefWidth="75.0" text="Nom" />
                 <TableColumn fx:id="postnom" prefWidth="75.0" text="Post-nom" />
